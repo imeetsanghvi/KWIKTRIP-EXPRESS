@@ -1,0 +1,100 @@
+<html>
+<head>
+</head>
+
+<body style="background-color:aliceblue ; font-family:calibiri; color:Black;">
+
+<script>
+function buses()
+{
+var scbus = new Array(6);
+for (var i = 0; i < 6; i++) {
+  scbus[i] = new Array(6);
+}
+scbus[0][0]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[0][1]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[0][2]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[0][3]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[0][4]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[0][5]="ENTER SOURCE AND DESTINATION BOTH";
+
+scbus[1][0]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[1][1]="Intercity Not Allowed";
+scbus[1][2]="AHD145";
+scbus[1][3]="PUN160";
+scbus[1][4]="LON100";
+scbus[1][5]="MAH99";
+
+
+scbus[2][0]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[2][2]="Intercity Not Allowed";
+scbus[2][1]="MUM01";
+scbus[2][3]="PUN161";
+scbus[2][4]="LON101";
+scbus[2][5]="MAH98";
+
+
+scbus[3][0]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[3][3]="Intercity Not Allowed";
+scbus[3][1]="MUM02";
+scbus[3][2]="AHD146";
+scbus[3][4]="LON102";
+scbus[3][5]="MAH97";
+
+
+scbus[4][0]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[4][4]="Intercity Not Allowed";
+scbus[4][1]="MUM03";
+scbus[4][2]="AHD147";
+scbus[4][3]="PUN162";
+scbus[4][5]="MAH96";
+
+
+scbus[5][0]="ENTER SOURCE AND DESTINATION BOTH";
+scbus[5][5]="Intercity Not Allowed";
+scbus[5][1]="MUM04";
+scbus[5][2]="AHD148";
+scbus[5][3]="PUN163";
+scbus[5][4]="LON103";
+
+    var scindex = document.Buses.sc;
+	var dcindex = document.Buses.dc;
+	
+var scinx=scindex.selectedIndex;
+var dcinx=dcindex.selectedIndex;
+var answer=scbus[scinx][dcinx];
+
+window.alert("The Avaliable Bus is  : "+ answer);
+return false;
+}
+</script>
+
+
+
+<form name="Buses" action="header.html" onsubmit="return buses();" method="post">
+<fieldset>
+Enter Source City &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:
+  <select name="sc">
+  <option value="0" selected>Select location</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="Ahmedabad">Ahmedabad</option>
+  <option value="Pune">Pune</option>
+  <option value="Lonavala">Lonavala</option>
+  <option value="Mahabaleshwar">Mahabaleshwar</option>
+  </select><br><br>
+Enter Destination City :
+  <select name="dc">
+  <option value="0" selected>Select location</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="Ahmedabad">Ahmedabad</option>
+  <option value="Pune">Pune</option>
+  <option value="Lonavala">Lonavala</option>
+  <option value="Mahabaleshwar">Mahabaleshwar</option>
+  </select>
+<input type="Submit" name="submit" value="Search Buses">&nbsp&nbsp&nbsp <button type="reset" value="Reset">RESET</button>
+&nbsp&nbsp&nbsp <button>  <a href="fwt.html" target="_top">HOME</a> </button>
+<marquee behavior="scroll" scrolldelay="5" direction="right"><img src="..\images\mbus.gif" width="160" height="120" alt="Natural" /></marquee>
+</fieldset>
+</form>
+</body>
+</html>

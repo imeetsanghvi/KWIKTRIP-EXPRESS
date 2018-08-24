@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+function admin()
+{
+	 var uname = document.ContactForm.username;
+     var pass = document.ContactForm.password;
+		
+	if (uname.value == "admin@123" && pass.value== "pass@123")
+    {
+        window.alert("logged in as administrator.");
+		return true;
+	}
+	else
+	{
+	    window.alert("Login credentials incorrect.");
+		return true;
+	}
+	return true;
+}
+</script>
+</head>
+
+<body style="font-family:calibiri; color:Black; background-color:aliceblue;">
+
+<form onsubmit="return admin();" name="ContactForm" method="post">
+
+<fieldset style="width:225px;background-color:white; ">
+<p style="text-align:center; font-size:18px; color:#3665c2;"><strong>Login</strong></p>
+<p style="color:#3665c2;">Username :<br>
+  <input type="text" name="username" maxlenght="100" size="27" placeholder="Enter Username"><br><br>
+Password :<br>
+  <input type="password" name="password" maxlenght="100" size="27" placeholder="Enter Password"><br><br>
+</p>
+<p align="center"><input type="submit" value="Login" name="submit"></p>
+<button> <a href="fwt.html" target="_top">HOME</a> </button>
+
+</fieldset><br><br>
+
+<fieldset style="width:225px; background-color:white; ">
+<p style="color:#3665c2;">In Case Of New User Please : </p><p style="text-align:center; font-size:18px;"><strong><a href="signup.html" target="_top"><input type="button" value="Sign Up" ></strong></p>
+</fieldset>
+
+</form>
+
+</body>
+</html>
+

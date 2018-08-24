@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function vsignup()
+{
+    var fname = document.ContactForm.firstname;
+	var mname = document.ContactForm.middlename;	
+    var lname = document.ContactForm.lastname;
+    var email = document.ContactForm.emailid;
+    var phone = document.ContactForm.Cnumber;
+	var chkbx1 = document.ContactForm.chkbx
+	var addr = document.ContactForm.address;
+
+    
+	if (fname.value == "")
+    {
+        window.alert("Please enter your first name.");
+        fname.focus();
+        return false;
+    }
+    
+	if (mname.value == "")
+    {
+        window.alert("Please enter your middle name.");
+        mname.focus();
+        return false;
+    }
+	
+	if (lname.value == "")
+    {
+        window.alert("Please enter your last name.");
+        lname.focus();
+        return false;
+    }
+	
+		if (addr.value == "")
+    {
+        window.alert("Please enter your Address.");
+        addr.focus();
+        return false;
+    }
+	    
+	if (email.value == "")
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf("@", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf(".", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+	
+	if(chkbx1.checked==false)
+	{
+        window.alert("Please accept all the terms and conditions.");
+		return false;
+		chkbx.focus();
+	}
+	
+    return true;
+}
+
+
+</script>
+</HEAD>
+</head>
+<body style="background-color:aliceblue ; font-family:calibiri; color:Black;">
+<div style="margin:0 auto;width:35%;text-align:left">
+
+<form align="left" name="ContactForm" action="registered1.html" onsubmit="return vsignup();" method="post">
+
+<fieldset style="width:300px; color:Black;">
+<fieldset>
+<legend align="left"><strong>Sign-Up Information</strong></legend><b><i>
+  First name:&nbsp&nbsp&nbsp&nbsp
+  <input type="text" name="firstname" maxlenght="100" size="20" placeholder="Enter Your First Name"autofocus><br><br>
+Middle name:&nbsp
+  <input type="text" name="middlename" maxlenght="100" size="20" placeholder="Enter Your Middle Name" autofocus><br><br>
+  Last name:&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="text" name="lastname" maxlenght="100" size="20" placeholder="Enter Your Last Name" autofocus><br><br>
+  
+<fieldset style="width:275px;">
+<legend align="left">Gender</legend>
+  <input type="radio" name="gender" value="male" > Male	
+  <input type="radio" name="gender" value="female">Female<br>
+</fieldset>
+
+<br>
+<fieldset style="width:275px">
+<legend align="left">Date Of Birth</legend>
+Date : <input type="date" autofocus>
+</fieldset>
+------------------------------------------------------------------
+<fieldset>
+<legend align="left">Other Details</legend>
+Contact Number : <input type="text" name="Cnumber" maxlenght="100" size="20" value="(+91)" placeholder="eg 9008028027" autofocus><br>
+Address : <br><textarea name="address" rows="3" cols="36" placeholder="Enter Your Address" autofocus></textarea><br>
+Email ID : <br> <input type="email" name="emailid" size="47" autofocus><br>
+
+<input type="checkbox" name="chkbx" onclick="EnableDisable(this);" value="I Accept all Terms 
+And Conditions" checked> I Accept all Terms And Conditions
+<p align="center">
+<input type="submit" value="Please Submit !">
+<button> <a href="fwt.html" target="_top">HOME</a> </button>
+</p>
+</fieldset>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function admin()
+{
+	 var uname = document.ContactForm.username;
+     var pass = document.ContactForm.password;
+		
+	if (uname.value == "admin@123" && pass.value== "pass@123")
+    {
+        window.alert("logged in as administrator.");
+		return true;
+	}
+	else
+	{
+	    window.alert("Login credentials incorrect.");
+		return true;
+	}
+	return true;
+}
+</script>
+</head>
+<body style="background-color:aliceblue ; font-family:calibiri; color:Black;">
+<marquee>
+<font color="Black" size="36">Login Page</marquee>
+<div style="margin:0 auto;width:30%;text-align:left">
+<form name="ContactForm" align="center" onsubmit="return admin();" method="post">
+<fieldset>
+Username :<br>
+  <input type="text" name="username" maxlenght="100" size="47"><br><br>
+Password :<br>
+  <input type="password" name="password" maxlenght="100" size="47"><br><br>
+
+<p align="center"><input type="submit" value="Login" name="submit"></p>
+<button> <a href="fwt.html" target="_top">HOME</a> </button>
+</fieldset>
+
+</form>
+</div>
+</body>
+</html>
+

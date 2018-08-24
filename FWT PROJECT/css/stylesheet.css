@@ -1,0 +1,85 @@
+
+html{
+	height:100%;
+}
+body {
+	height:97%;
+	background: #3665c2;
+}
+fieldset { 
+	background-color: snow;
+    display: block;
+    border: 2px groove;
+	height: 98%;
+	width: 98%;
+	border-radius:20px;
+}
+
+
+.r1{
+	height:10%;
+	width: 80%;
+}
+
+marquee{
+	color:lightcoral;
+	font-weight: bold;
+	font-size:32px;
+}
+
+.container {
+	background-color: #FFF;
+	min-height: 99.5%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.grid_x,.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16
+	{
+	background-color: #FFF;
+}
+
+.g_padding {
+	padding: 4px;
+}
+
+.g_margin {
+	margin: 4px;
+}
+
+.g_head {
+	background-color: #3665c2;
+	font: bold 13px arial;
+	text-align: left;
+}
+
+.g_hedtext {
+	color: #FFF;
+	display: inline;
+	font: bold 13px arial;
+	text-align: left;
+}
+
+.g_box {
+	border: 1px solid #3665c2;
+}
+
+.fluidMedia {
+    overflow: hidden;    
+}
+
+#loginbutton{
+		margin-top: 5%;
+		color: #fff;
+		background-color: #3665C2;
+		border-color:#3665C2;
+		background-image: none;
+		padding: 5px;
+		font: bold 13px arial;
+		border-radius: 12px;
+}
+#loginbutton:hover{
+	font: bold 14px arial 	
+}

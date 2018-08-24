@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.mySlides {display:none;}
+html, body {
+				background-color:aliceblue;
+                width: auto;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+button {
+    background-color: white;
+    border: 1;
+    color: white;
+	text-align: center;
+	margin-left:10px;
+	text-color:Black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+</style>
+<body>
+
+<div class="w3-content w3-section">
+<h1 style="color:darkslateblue; margin-left:30px;">Bus Ticketing:</h1>
+<button> <a href="busavail.html" target="_top">CHECK BUS AVAILABILITY:</a> </button> <button> <a href="busbook.html" target="_top">BOOK BUS:</a> </button> <button> <a href="fwt.html" target="_top">GO TO HOME</a> </button> 
+<br><br><br><br><br><br><br>
+<div class="w3-content w3-section" align="center">
+  <img class="mySlides" src="..\images\b1.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b2.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b3.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b4.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b5.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b6.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b7.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b8.jpg"  style="width:500px">
+  <img class="mySlides" src="..\images\b10.jpg" style="width:500px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html></div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
